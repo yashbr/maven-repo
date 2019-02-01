@@ -25,7 +25,7 @@ public class CaseStudyNine {
 		
 		if(browserType.equalsIgnoreCase("chrome")) {
 			System.out.println("Using ChromDriver");
-			System.setProperty("webdriver.chrome.driver", currDir+"\\..\\selenium-edureka\\driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", currDir+"\\driver\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		
