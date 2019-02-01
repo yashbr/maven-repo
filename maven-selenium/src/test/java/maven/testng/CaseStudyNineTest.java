@@ -16,11 +16,13 @@ public class CaseStudyNineTest {
 	public void beforeSuite() {
 		testngCS = new CaseStudyNine();
 		testngCS.setupSelenium("chrome", "https://www.edureka.co");
+		System.out.println("CaseStudyNineTest -> Before Suite");
 	}
 
 	@AfterSuite
 	public void afterSuite() {
 		testngCS.quitBrowser();
+		System.out.println("CaseStudyNineTest -> After Suite");
 	}
 
 	@Test(priority = 0)
@@ -30,8 +32,9 @@ public class CaseStudyNineTest {
 			 String filePath = System.getProperty("user.dir");
 			String[][] data = excelFile.readExcel(filePath+"\\src\\test\\resources\\selenium-test-data.xlsx","test-data");
 			String email = data[0][0];
-            String password = data[0][1];			
+          		String password = data[0][1];			
 			testngCS.login(email, password);
+			System.out.println("testLogin is Success");
 		} catch (Exception e) {
 			System.out.println(e);
 			e.printStackTrace(System.out);
@@ -42,6 +45,7 @@ public class CaseStudyNineTest {
 	public void testBrowseBlog() {
 		try {
 			testngCS.browseBlog();
+			System.out.println("testBrowseBlog is Success");
 		} catch (Exception e) {
 			System.out.println(e);
 			e.printStackTrace(System.out);
@@ -52,6 +56,7 @@ public class CaseStudyNineTest {
 	public void testLogout() {
 		try {
 			testngCS.logout();
+			System.out.println("testLogout is Success");
 		} catch (Exception e) {
 			System.out.println(e);
 			e.printStackTrace(System.out);
