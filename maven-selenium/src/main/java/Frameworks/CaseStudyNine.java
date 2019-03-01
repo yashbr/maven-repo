@@ -55,7 +55,9 @@ public class CaseStudyNine {
 //		driver.findElement(By.id("si_popup_email")).sendKeys(email);
 //		driver.findElement(By.id("si_popup_passwd")).sendKeys(password);
 //		driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();
-			
+		
+		System.out.println("Email : " + email);
+		System.out.println("Password : " + password);
 		Actions actions = new Actions(driver);
 		actions.moveToElement(driver.findElement(By.linkText("Log In")));
 		actions.click();
