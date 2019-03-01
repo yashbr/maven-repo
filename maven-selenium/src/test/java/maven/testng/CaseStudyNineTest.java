@@ -30,10 +30,11 @@ public class CaseStudyNineTest {
 		try {
 			ExcelFile excelFile = new ExcelFile();
 			 String filePath = System.getProperty("user.dir");
-			String[][] data = excelFile.readExcel(filePath+"\\src\\test\\resources\\selenium-test-data.xlsx","test-data");
-			String email = data[0][0];
-          		String password = data[0][1];			
-			testngCS.login(email, password);
+			//String[][] data = excelFile.readExcel(filePath+"\\src\\test\\resources\\selenium-test-data.xlsx","test-data");
+			//String email = data[0][0];
+          		//String password = data[0][1];			
+			//testngCS.login(email, password);
+			testngCS.login("testingedureka@gmail.com", "12345678");
 			System.out.println("testLogin is Success");
 		} catch (Exception e) {
 			System.out.println(e);
