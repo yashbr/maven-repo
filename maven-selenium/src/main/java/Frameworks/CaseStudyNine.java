@@ -36,6 +36,7 @@ public class CaseStudyNine {
 		}
 		
 		if(browserType.equalsIgnoreCase("htmlunitdriver")) {
+			System.out.println("Using htmlunitdriver");
 			driver = new HtmlUnitDriver();
 		}
 		
