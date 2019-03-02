@@ -37,6 +37,7 @@ public class CaseStudyNineTest {
 			testngCS.login("testingedureka@gmail.com", "12345678");
 			System.out.println("testLogin is Success");
 		} catch (Exception e) {
+			System.out.println("testLogin  Failed");
 			System.out.println(e);
 			e.printStackTrace(System.out);
 		}
