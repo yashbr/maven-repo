@@ -86,6 +86,7 @@ public class CaseStudyNine {
 		// Scroll down untill the blog element is visible
 		WebElement blog = driver.findElement(By.xpath("//*[@id=\"footer-blog\"]/a"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
+		System.out.println("*******  Arguments[0] = " + arguments[0]);
 		js.executeScript("arguments[0].scrollIntoView();", blog);
 		Thread.sleep(2000);
 		
