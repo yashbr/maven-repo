@@ -132,6 +132,7 @@ public class CaseStudyNine {
 	}
 
 	public void quitBrowser() {
+		System.out.println("Quiting the browser");
 		driver.quit();
 	}
 
